@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "app">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Deborah Hellen Dressage">
+    <meta name="keywords" content="dressage, deborah hellen, horse, dressage judging">
+
+    <title>Deborah Hellen Dressage</title>
+
+    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+    <link rel='shortcut icon' href='favicon.ico'/>
+
+    <!-- Custom CSS -->
+    <link href="vendor/freelancer/css/freelancer.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/freelancer/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">Deborah Hellen Dressage</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#portfolio">Gallery</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class = "background-img">
+            <img class = "background-img" src = "img/sgt_mike.jpg">
+        </div>
+        <div class = "background-img-sm">
+            <img class = "background-img-sm" src = "img/sgt_mike_sm.jpg">
+        </div>
+
+        <!--<img class="img-responsive" src="img/profile.png" alt="">-->
+        <div class="intro-text">
+            <span class="name">Deborah Hellen</span>
+            <div class = "bar-light"></div>
+            <span class="skills">USDF Bronze Medalist and "L" Graduate with Distinction</span>
+        </div>
+
+    </header>
+<div class = "main">
+    <!-- About Section -->
+    <section class="success" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>About </h2>
+                    <div class = "bar-light"></div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-2">
+                    <p>Deborah is a life-long horsewoman and passionate dressage rider currently located in Needham, MA. She grew up riding with Tami Batts in North Carolina and relocated to Massachusetts in 2012 to pursue an engineering degree at Olin College. She received her USDF Bronze Medal in the summer of 2012 and completed the USDF "L" Program in 2015. She takes pride in introducing horses of all breeds to dressage and developing a happy athlete through kind, correct training.</p>
+                </div>
+                <div class="col-lg-4">
+                    <p>Deborah is available for judging dressage schooling shows in the New England area during the fall and spring. Dressage training is also available on a limited basis. Please inquire below for further information about availability and pricing!</p>
+                    <p>She also designs and builds custom websites for individuals or small businesses. Please inquire for further information on pricing and website options!</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Gallery</h2>
+                    <div class = "bar-dark"></div>
+                    <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/reggie.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/idgie.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/deborah-dublin.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/deborah-morgan-dublin.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/xena2.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 portfolio-item">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="img/xena1.jpg" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Contact</h2>
+                    <div class = "bar-dark"></div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2" ng-controller = "contactController">
+                    <form name="sentMessage" novalidate ng-click = "hideMsg()">
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Name</label>
+                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name." ng-model = formData.name>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Email Address</label>
+                                <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address." ng-model = formData.email>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Message</label>
+                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message." ng-model = formData.message></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class = "confirmMsg">{{msg}}</div>
+                        <br>
+                        <div class="row">
+                            <div class="form-group col-xs-12">
+                                <button type="submit" class="btn btn-success btn-lg" ng-click = "sendEmail(formData)">Send</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <h3>Location</h3>
+                        <p>Currently located in Needham, MA</p>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>Connect</h3>
+                        <ul class="list-inline">
+                            <li>
+                                <a href="https://www.facebook.com/deborah.hellen" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/pub/deborah-hellen/84/589/770" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="footer-col col-md-4">
+                        <h3>About this Site</h3>
+                        <p>This site was designed and built by Deborah Hellen. Check out other software projects I've done on <a href="https://github.com/deborahhellen">Github</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Deborah Hellen 2015
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll visible-xs visible-sm">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class = "gallery-zoom">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class = "row">
+                        <div class = "col-xs-1 gallery-chevron">
+                            <i class="fa fa-chevron-left fa-2x"></i>
+                        </div>
+                        <div class = "col-xs-10">
+                            <img src="img/reggie.jpeg" class="img-responsive img-centered" alt="">
+                        </div>
+                        <div class = "col-xs-1 gallery-chevron">
+                            <i class="fa fa-chevron-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <p>Deborah and Iberico's Empire, an Andalusian-Oldenburg Cross</p>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class = "gallery-zoom">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <img src="img/xena1.jpg" class="img-responsive img-centered" alt="">
+                    <p>Deborah and Xena, a Connemara pony, at a schooling show summer 2015</p>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class = "gallery-zoom">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <img src="img/xena2.jpg" class="img-responsive img-centered" alt="">
+                    <p>Deborah and Xena</p>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class = "gallery-zoom">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <img src="img/deborah-morgan-dublin.jpg" class="img-responsive img-centered" alt="">
+                    <p>All smiles after a successful debut at 2nd level on Dublin! </p>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class = "gallery-zoom">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <img src="img/deborah-dublin.jpg" class="img-responsive img-centered" alt="">
+                    <p>Deborah and Dublin compete in Raleigh NC summer 2012</p>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class = "gallery-zoom">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <img src="img/idgie.jpg" class="img-responsive img-centered" alt="">
+                    <p>Deborah and Joy Cobb's precious mare, The Bee Charmer</p>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendor/jQuery/jquery-1.11.3.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/freelancer/js/classie.js"></script>
+    <script src="vendor/freelancer/js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="vendor/freelancer/js/jqBootstrapValidation.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="vendor/freelancer/js/freelancer.js"></script>
+
+</body>
+
+</html>
