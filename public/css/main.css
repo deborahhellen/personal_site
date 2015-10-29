@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
 @media(min-width:900px) {
 	div.background-img {
 		width: 100%;
