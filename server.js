@@ -28,7 +28,7 @@ app.post('/api/contact', function (req, res) {
       from: req.body.name + ' &lt;' + req.body.email + '&gt;', //grab form data from the request body object
       to: process.env.EMAIL_ADDR || "me@gmail.com",
       subject: 'A Message From Your Website Contact Form',
-      text: req.body.message
+      text: 'Please do not reply directly to this email. Use the address: ' + req.body.email + '. Message Content: ' + req.body.message
   };
   smtpTrans.sendMail(mailOpts, function (error, response) {
       //Email not sent
