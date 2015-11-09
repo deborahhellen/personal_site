@@ -46,6 +46,12 @@ app.post('/api/contact', function (req, res) {
 
 });
 
+app.get('/sitemap.xml', function(req, res) {
+    var sitemap = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> <url><loc>http://www.deborahhellen.com</loc> </url></urlset>'; // hard coded site map yolo
+    res.header('Content-Type', 'text/xml');
+    res.send(sitemap);     
+})
+
 var PORT = 3000;
 
 app.listen(process.env.PORT || PORT);
