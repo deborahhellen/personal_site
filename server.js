@@ -4,6 +4,7 @@ var logger = require("morgan");
 var cookieParser = require("cookie-parser");
 var bodyParser = require("body-parser");
 var nodemailer = require('nodemailer');
+var sm = require('sitemap');
 
 var app = express();
 
@@ -46,11 +47,24 @@ app.post('/api/contact', function (req, res) {
 
 });
 
+var sitemap = sm.createSitemap ({
+      hostname: 'http://www.deborahhellen.com',
+      cacheTime: 600000000,        // 600 sec - cache purge period 
+      urls: [
+        { url: '/',  changefreq: 'monthly', priority: 0.5 }
+      ]
+    });
+ 
 app.get('/sitemap.xml', function(req, res) {
-    var sitemap = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> <url><loc>http://www.deborahhellen.com</loc> </url></urlset>'; // hard coded site map yolo
-    res.header('Content-Type', 'text/xml');
-    res.send(sitemap);     
-})
+  sitemap.toXML( function (err, xml) {
+      if (err) {
+        return res.status(500).end();
+      }
+      res.header('Content-Type', 'application/xml');
+      res.send( xml );
+  });
+});
+
 
 var PORT = 3000;
 
