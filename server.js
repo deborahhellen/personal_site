@@ -65,6 +65,9 @@ app.get('/sitemap.xml', function(req, res) {
   });
 });
 
+app.get('/google4be1d09fa5c04070.html', function(req, res) {
+  res.send("google-site-verification: google4be1d09fa5c04070.html");
+});
 
 var PORT = 3000;
 
