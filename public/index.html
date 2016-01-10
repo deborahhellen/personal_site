@@ -56,6 +56,9 @@
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
+                        <a href="#services">Services</a>
+                    </li>
+                    <li class="page-scroll">
                         <a href="#portfolio">Gallery</a>
                     </li>
                     <li class="page-scroll">
@@ -71,16 +74,15 @@
     <!-- Header -->
     <header>
         <div class = "background-img">
-            <img class = "background-img" src = "img/sgt_mike.jpg">
+            <img class = "background-img" src = "img/dublin-trot.jpg">
         </div>
         <div class = "background-img-sm">
-            <img class = "background-img-sm" src = "img/sgt_mike_sm.jpg">
+            <img class = "background-img-sm" src = "img/dublin-trot.jpg">
         </div>
 
         <!--<img class="img-responsive" src="img/profile.png" alt="">-->
         <div class="intro-text">
             <span class="name">Deborah Hellen</span>
-            <div class = "bar-light"></div>
             <span class="skills">USDF Bronze Medalist and "L" Graduate with Distinction</span>
         </div>
 
@@ -90,19 +92,48 @@
     <section class="success" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>About</h2>
-                    <div class = "bar-light"></div>
-                    <br>
+               <div class="col-lg-12 text-center">
+                    <div class = "section-title"><h2>About</h2></div>
+                    <!--<div class = "bar-light"></div>-->
+                    <br><br>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-2">
-                    <p>Deborah is a life-long horsewoman and avid dressage rider currently located in Needham, MA. She grew up riding with Tami Batts in NC and relocated to Massachusetts in 2012 to pursue an engineering degree at Olin College. She received her USDF Bronze Medal in the summer of 2012 and completed the USDF "L" Program with distinction in 2015. She takes pride in introducing horses of all breeds to dressage and promoting the development of happy athletes through correct training and fair judging. She also enjoys volunteering with the Massachusetts DCR by schooling the handsome patrol horse, Sgt Mike (pictured above.)</p>
+                <div class="col-lg-8 col-lg-offset-2 text-center" style="font-weight:">
+                    <p>Deborah is a life-long horsewoman and avid dressage rider currently located in Needham, MA. She grew up riding with Tami Batts in Greensboro, North Carolina and relocated to Massachusetts in 2012 to pursue an engineering degree at Olin College. She received her USDF Bronze Medal in the summer of 2012 and completed the USDF "L" Program with distinction in 2015. She takes pride in introducing horses of all breeds to dressage and promoting the development of happy athletes through correct training and fair judging. <!--She also enjoys volunteering with the Massachusetts DCR by schooling the handsome patrol horse, Sgt Mike (pictured above.)-->
+                    
                 </div>
-                <div class="col-lg-4">
-                    <p>Deborah is available for judging dressage schooling shows in the New England area during the fall and spring. Dressage training is also available on a limited basis. Please inquire below for further information about availability and pricing!</p>
-                    <p>She also designs and builds custom websites for individuals or small businesses. Please inquire for further information on pricing and website options!</p>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class = "standard">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class = "section-title"><h2>Services</h2></div>
+                    <!--<div class = "bar-light"></div>-->
+                    <br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 text-center">
+                    <h3>Judging</h3><br>
+                    <p>Deborah believes that through fair judging she can promote kind, correct training for the horse and confidence for the rider. She completed the USDF "L" program with Distinction at age 21 and aspires to become a USEF licensed judge. She is currently available for judging dressage schooling shows in New England.</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3>Training</h3><br>
+                    <p>Deborah offers dressage training for both horse and rider on a limited basis in the greater Boston area. Her specialty is introducing "non-traditional" breeds to dressage, as she believes that all horses can benefit from correct dressage basics.</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <h3>Websites</h3><br>
+                    <p>Deborah is a trained software engineer specializing in web development. She designs and builds custom mobile and tablet friendly websites from scratch for individuals and small businesses. Please inquire for more examples and options!</p>
+                </div>
+            </div><br><br>
+            <div class = "row">
+                <div class="col-lg-12 text-center">
+                    <p><em>Please inquire below for pricing, availability, and any aditional information <a href="#contact">here</a>. Thank you!</em></p>
                 </div>
 
             </div>
@@ -110,12 +141,11 @@
     </section>
 
     <!-- Portfolio Grid Section -->
-    <section id="portfolio">
+    <section id="portfolio" class = "success">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Gallery</h2>
-                    <div class = "bar-dark"></div>
+                     <div class = "section-title"><h2>Gallery</h2></div>
                     <br>
                 </div>
             </div>
@@ -186,12 +216,11 @@
 
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class = "standard">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact</h2>
-                    <div class = "bar-dark"></div>
+                    <div class = "section-title"><h2>Contact</h2></div>        
                 </div>
             </div><br>
             <div class="row">
@@ -223,7 +252,7 @@
                         <br>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg" ng-click = "sendEmail(formData)">Send</button>
+                                <button type="submit" class="btn btn-success btn-lg send-btn" ng-click = "sendEmail(formData)">Send</button>
                             </div>
                         </div>
                     </form>

@@ -6,16 +6,16 @@
 
 body {
     overflow-x: hidden;
-    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:300;
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p.small {
-    font-size: 16px;
+    font-size: 12px;
 }
 
 a,
@@ -24,7 +24,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #5BB7FD;
 }
 
 h1,
@@ -34,47 +34,8 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
-}
-
-hr.star-light,
-hr.star-primary {
-    margin: 25px auto 30px;
-    padding: 0;
-    max-width: 250px;
-    border: 0;
-    border-top: solid 5px;
-    text-align: center;
-}
-
-hr.star-light:after,
-hr.star-primary:after {
-    content: "\f005";
-    display: inline-block;
-    position: relative;
-    top: -.8em;
-    padding: 0 .25em;
-    font-family: FontAwesome;
-    font-size: 2em;
-}
-
-hr.star-light {
-    border-color: #fff;
-}
-
-hr.star-light:after {
-    color: #fff;
-    background-color: #18bc9c;
-}
-
-hr.star-primary {
-    border-color: #2c3e50;
-}
-
-hr.star-primary:after {
-    color: #2c3e50;
-    background-color: #fff;
+    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
 }
 
 .img-centered {
@@ -100,14 +61,14 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 3.5em;
     font-weight: 700;
 }
 
 header .intro-text .skills {
     font-size: 1.25em;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 @media(min-width:768px) {
@@ -118,10 +79,12 @@ header .intro-text .skills {
 
     header .intro-text .name {
         font-size: 4.75em;
+        opacity: 1;
     }
 
     header .intro-text .skills {
         font-size: 1.75em;
+        opacity: 1;
     }
 }
 
@@ -131,6 +94,7 @@ header .intro-text .skills {
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .navbar-fixed-top .navbar-brand {
@@ -142,6 +106,8 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink {
         padding: 10px 0;
+        background-color: rgba(0, 0, 0, 1);
+        /*background-color: rgba(37, 62, 52, 0.8);*/
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
@@ -149,9 +115,17 @@ header .intro-text .skills {
     }
 }
 
+
 .navbar {
-    font-family: Raleway,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 400;
+    font-family: Lato,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 300;
+    color:#fff;
+}
+
+@media(max-width:768px) {
+    .navbar-fixed-top {
+        background-color: rgba(0, 0, 0, 0.85);
+    }
 }
 
 .navbar a:focus {
@@ -166,9 +140,17 @@ header .intro-text .skills {
     outline: 0;
 }
 
+.navbar .navbar-nav li a:hover {
+    color: #5BB7FD;
+}
+
 .navbar-default,
 .navbar-inverse {
     border: 0;
+}
+
+.navbar-brand, .navbar-default {
+    color:#fff;
 }
 
 section {
@@ -182,7 +164,9 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background-color: rgba(0, 0, 0, 0.85);
+    /*background-color: rgba(37, 62, 52, 1);*/
+    font-size:13px;
 }
 
 section.success a,
@@ -191,7 +175,12 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
+    color: #274136;
+}
+
+section.standard {
+    background: #fff;
+    font-size: 13px;
 }
 
 @media(max-width:767px) {
@@ -221,7 +210,7 @@ section.success a.active {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(24,188,156,.9);
+    background: rgba(91, 183, 253, .85);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -275,7 +264,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #5BB7FD;
     background: #fff;
 }
 
@@ -346,7 +335,8 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background: #18bc9c;
+    /*background: #7B9489;*/
+     background-color: rgba(0, 0, 0, 0.85);
 }
 
 footer .footer-col {
@@ -355,11 +345,12 @@ footer .footer-col {
 
 footer .footer-below {
     padding: 25px 0;
-    background-color: #233140;
+    background-color: rgba(0, 0, 0, 1);
+    /*background-color: #253E34;*/
 }
 
 footer .footer-above a {
-    color: #233140;
+    color: #5BB7FD;
 }
 
 .btn-social {
