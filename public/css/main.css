@@ -5,12 +5,11 @@
 	div.background-img {
 		width: 100%;
 		position:fixed;
-		top:-25rem;
+		top:-39vh;
 	}
 
 	div.background-img img {
 		width: 100%;
-		height: auto;
 	}
 
 	div.background-img-sm {
@@ -22,6 +21,12 @@
 		top:55vh;
 		width: 100%;
 		background-color: rgba(0,0,0, 0.45);
+	}
+
+	div.main {
+	position: absolute;
+	top:95vh;
+	width: 100%;
 	}
 }
 
@@ -40,12 +45,6 @@ div.section-title {
 	padding:.9rem;
 }
 
-
-div.main {
-	position: absolute;
-	top:93vh;
-	width: 100%;
-}
 
 div.confirmMsg {
 	color: #233140;
@@ -112,33 +111,38 @@ button.send-btn:hover {
 		top:0;
 	}
 	div.background-img {
-		position: absolute;
+		position: fixed;
 		height:100vh;
 		margin:0 auto;
-		left:-10rem;
-		width: default;
+		top: -30vh;
+		left:-15rem;
+		width: 100%;
 	}
 
 	div.background-img-sm {
 		display: none;
 	}
 
-	.background-img img {
-		width:120%;
-	}
-
 	div.intro-text {
-
 		color:#fff;
-		top:34rem;
+		top:55vh;
 		width: 100%;
 		background-color: rgba(0,0,0, 0.45);
 	}
 
+	div.background-img img {
+		height: 130vh;
+	}
+
+	div.main {
+	position: absolute;
+	top:95vh;
+	width: 100%;
+	}
 
 }
 
-@media(max-width:450px){
+@media(max-width:500px){
 	.navbar .navbar-brand {
 	    font-size: 16px;
 	}
@@ -159,8 +163,8 @@ button.send-btn:hover {
 	div.background-img-sm {
 		display: block;
 		position: absolute;
-		top:-3rem;
-		left: -26rem;
+		top:-12rem;
+		left: -17rem;
 		width: default;
 	}
 
