@@ -5,7 +5,8 @@
 	div.background-img {
 		width: 100%;
 		position:fixed;
-		top:-39vh;
+		top:-25rem;
+		height: 100vh;
 	}
 
 	div.background-img img {
@@ -163,7 +164,7 @@ button.send-btn:hover {
 	div.background-img-sm {
 		display: block;
 		position: absolute;
-		top:-12rem;
+		top:-5rem;
 		left: -17rem;
 		width: default;
 	}
