@@ -1,16 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,300,700);
 
-@media(min-width:900px) {
+body {
+	display:none;
+}
+
+@media screen and (min-width: 1000px) and (orientation:landscape) {
 	div.background-img {
 		width: 100%;
 		position:fixed;
-		top:-25rem;
+		top:0;
 		height: 100vh;
 	}
 
 	div.background-img img {
-		width: 100%;
+    	position: absolute;
+    	width: 100%;
+    	top: -24rem;
 	}
 
 	div.background-img-sm {
@@ -25,10 +31,20 @@
 	}
 
 	div.main {
-	position: absolute;
-	top:95vh;
-	width: 100%;
+		position: relative;
+		padding-top:95vh;
+		width: 100%;
 	}
+}
+
+.headshot {
+	border-radius:50%;
+	padding:1rem 1rem 2rem 1rem;
+}
+
+p.caption {
+	width:80%;
+	margin-left:10%;
 }
 
 header div.intro-text {
@@ -105,19 +121,17 @@ button.send-btn:hover {
 	color: #5BB7FD;;
 }
 
-@media(max-width:900px) {
+@media(max-width:1000px) {
 	.gallery-zoom {
 		width:100%;
 		margin:0;
 		top:0;
 	}
 	div.background-img {
-		position: fixed;
-		height:100vh;
+		position: relative;
 		margin:0 auto;
-		top: -30vh;
-		left:-15rem;
 		width: 100%;
+		height:67rem;
 	}
 
 	div.background-img-sm {
@@ -132,13 +146,15 @@ button.send-btn:hover {
 	}
 
 	div.background-img img {
-		height: 130vh;
+		position: absolute;
+    	left: -17rem;
+    	top: -22rem;
+   		height: 133%;
 	}
 
 	div.main {
-	position: absolute;
-	top:95vh;
-	width: 100%;
+		position: relative;
+		width: 100%;
 	}
 
 }
@@ -163,10 +179,10 @@ button.send-btn:hover {
 
 	div.background-img-sm {
 		display: block;
-		position: absolute;
-		top:-5rem;
-		left: -17rem;
-		width: default;
+		position: relative;
+		top: -2rem;
+    	left: -16rem;
+		height: 95vh;
 	}
 
 	.background-img img {
