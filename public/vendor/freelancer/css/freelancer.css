@@ -71,6 +71,11 @@ header .intro-text .skills {
     font-weight: 300;
 }
 
+header .intro-text .tagline {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
 @media(min-width:768px) {
     header .container {
         padding-top: 200px;
@@ -85,6 +90,12 @@ header .intro-text .skills {
     header .intro-text .skills {
         font-size: 1.75em;
         opacity: 1;
+    }
+
+    header .intro-text .tagline {
+        font-size: 1.25em;
+        opacity: 1;
+        font-weight:300;
     }
 }
 

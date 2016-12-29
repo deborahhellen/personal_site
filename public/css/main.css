@@ -3,6 +3,7 @@
 
 body {
 	display:none;
+	background-color:#111;
 }
 
 @media screen and (min-width: 1000px) and (orientation:landscape) {
@@ -16,8 +17,7 @@ body {
 	div.background-img img {
     	position: absolute;
     	width: 100%;
-    	top: -24rem;
-	}
+    	}
 
 	div.background-img-sm {
 		display: none;
@@ -159,7 +159,7 @@ button.send-btn:hover {
 
 }
 
-@media(max-width:500px){
+@media(max-width:700px){
 	.navbar .navbar-brand {
 	    font-size: 16px;
 	}
@@ -181,7 +181,6 @@ button.send-btn:hover {
 		display: block;
 		position: relative;
 		top: -2rem;
-    	left: -16rem;
 		height: 95vh;
 	}
 
